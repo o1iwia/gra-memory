@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+  <header class="start">
+    <h1>Memory</h1>
+    <p>Zapamiętaj, odkryj, dopasuj!</p>
+
+    
+    <div class="ozdoba">
+      <span class="ozdobna-karta">🍎</span>
+      <span class="ozdobna-karta">🍇</span>
+      <span class="ozdobna-karta">🍓</span>
+    </div>
+
+    <a class="przycisk-start" href="#gra">Zagraj teraz</a>
+  </header>
+
+  <main id="gra">
+    <h2>Gra</h2>
+
+    <div class="ustawienia">
+      <label for="poziom">Poziom trudności:</label>
+      <select id="poziom">
+        <option value="12">Łatwy – 12 kart (6 par)</option>
+        <option value="16">Średni – 16 kart (8 par)</option>
+        <option value="20">Trudny – 20 kart (10 par)</option>
+      </select>
+      <button id="nowa-gra" type="button">Nowa gra</button>
+    </div>
+
+    <p id="najlepszy">Najlepszy wynik: –</p>
+
+    <div class="statystyki">
+      <span>Ruchy: <strong id="ruchy">0</strong></span>
+      <span>Czas: <strong id="czas">0</strong> s</span>
+    </div>
+
+    <div id="plansza"></div>
+
+    <p id="komunikat"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
