@@ -109,3 +109,20 @@ button:hover {
 .kolumny5 {
   grid-template-columns: repeat(5, 1fr);
 }
+.karta {
+  font-size: 2rem;
+  background: #0d00a4;
+  color: transparent;
+  border: 2px solid #140152;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dopasowana {
+background: #e0ffe4;
+  color: #04052e;
+  border-color: #2e8b57;
+}
+.odkryta {
+  background: white;
+  color: #04052e;
+}

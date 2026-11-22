@@ -7,9 +7,23 @@ const btnNowaGra = document.getElementById("nowa-gra");
  $(function(){
     const plansza = $("#plansza");
     const wybranyPoziom = $("#poziom");
+    const symbole = ["🍎", "🍇", "🍓", "🍒", "🍋", "🍉", "🥝", "🍑", "🍍", "🥥"];
+    let stoper = null;
     
+    function stopStoper() {
+        clearInterval(stoper);
+        stoper=null;
+    }
     function nowaGra() {
+        let licznikRuchow = 0;
+        let sekundy = 0;
+        let czyGraWystartowala = false;
+
+        $("#ruchy").text(0);
+        $("#czas").text(0);
+        $("#komunikat").text("");
         plansza.empty();
+
         const liczbaKart = Number($("#poziom").val());
         plansza.removeClass("kolumny4 kolumny5");
         if(liczbaKart === 20) {
@@ -20,6 +34,13 @@ const btnNowaGra = document.getElementById("nowa-gra");
         for(let i=0;i<liczbaKart;i++) {
             const karta = $("<button></button>").addClass("karta");
             plansza.append(karta);
+        }
+        if(!czyGraWystartowala) {
+            czyGraWystartowala = true;
+            stoper = setInterval(function() {
+                sekundy++;
+                $("#czas").text(sekundy);
+            },1000);
         }
     
     }
