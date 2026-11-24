@@ -110,6 +110,7 @@ button:hover {
   grid-template-columns: repeat(5, 1fr);
 }
 .karta {
+  height: 80px;
   font-size: 2rem;
   background: #0d00a4;
   color: transparent;
@@ -125,4 +126,9 @@ background: #e0ffe4;
 .odkryta {
   background: white;
   color: #04052e;
+}
+#plansza {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
 }
