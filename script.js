@@ -1,9 +1,3 @@
-const komunikat = document.getElementById("komunikat");
-const ruchy = document.getElementById("ruchy");
-const czas = document.getElementById("czas");
-const najlepszyWynik = document.getElementById("najlepszy");
-const btnNowaGra = document.getElementById("nowa-gra");
-
 $(function(){
     const plansza = $("#plansza");
     const wybranyPoziom = $("#poziom");
@@ -95,7 +89,7 @@ $(function(){
                             odkryte = [];
                             blokadaKlikania = false;
                         }, 800);
-                    }
+                     }
                 }
             });
 
